@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center">
+    <p class="text-muted text-center" *ngIf="!photos.length">
+        Sorry, not found pictures!
+    </p>    
+    <ol class="list-unstyled">
+        <li *ngFor="let cols of rows" class="row">
+            <div *ngFor="let photo of cols" class="p-5" apDarkenOnHover
+            [ngClass]="{'col-4': cols.length == 3, 'col-6':cols.length == 2 && row == 1, 
+            'col-12' :cols.length == 1 && row == 1}">                                             
+            <ap-card [title]="photo.tags">                
+                <ap-photo  [url]="photo.previewURL" [description]='photo.tags' alt='photo.tags'></ap-photo>                               
+                <div class="text-center p-1">
+                    <i class="fa fa-heart fa-1x mr-2 heart" aria-hidden="true">
+                        {{photo.likes}}
+                    </i>
+                    <i class="fa fa-comment-o fa-1x mr-2 ml-2 comment" aria-hidden="true">
+                        {{photo.comments}}
+                    </i>
+                </div>                                                                                        
+            </ap-card>              
+            </div>
+        </li>
+    </ol>
+</div>

@@ -1,0 +1,15 @@
+.heart {
+    color: rgba(255, 0, 0, 0.596);
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
+.comment {
+    color: rgba(4, 163, 255, 0.596);
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}

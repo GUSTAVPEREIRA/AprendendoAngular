@@ -1,0 +1,11 @@
+img{
+    max-width: 10rem;
+    max-height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;       
+    margin: 0 auto; 
+}
+
+.thumbnail {
+    background: rgb(240, 240, 240);
+}
